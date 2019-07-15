@@ -1,15 +1,22 @@
 package com.stackroute.spring_demo;
 
 public class Movie {
-    private Actor actor;
+
+    Actor actor;
+
+
+    public Actor getActor() {
+        return actor;
+    }
 
     public void setActor(Actor actor) {
         this.actor = actor;
     }
 
-    public void displayActorInfo()
-
-    {
-        actor.displayActorInfo1();
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "actor=" + actor +
+                '}';
     }
 }
