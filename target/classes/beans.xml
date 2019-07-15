@@ -1,13 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8" ?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="actor" class="com.stackroute.spring_demo.Actor" init-method="initBean" destroy-method="destroyBean">
+        <property name="name" value="PRabhas"></property>
+        <property name="gender" value="Male"></property>
+        <property name="age" value="40"></property>
+    </bean>
 
 
 
-    <bean id="cycle" class="com.stackroute.spring_demo.BeanLifeCycleDemo" init-method="Init" destroy-method="clean" ></bean>
+
+
+    <bean class="com.stackroute.spring_demo.BeanPostProcessorDemoBean" >
+
+    </bean>
 
 
 </beans>
