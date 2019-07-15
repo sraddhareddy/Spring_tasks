@@ -1,33 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8" ?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="actor" class="com.stackroute.spring_demo.Actor">
-        <constructor-arg index="0" value="sraddha"> </constructor-arg>
-        <constructor-arg index="1" value="female"> </constructor-arg>
-        <constructor-arg index="2" value="21"></constructor-arg>
-
+        <property name="name" value="Prabhas"></property>
+        <property name="gender" value="Male"></property>
+        <property name="age" value="40"></property>
     </bean>
-
     <bean id="actor1" class="com.stackroute.spring_demo.Actor">
-        <constructor-arg index="0" value="sam"> </constructor-arg>
-        <constructor-arg index="1" value="female"> </constructor-arg>
-        <constructor-arg index="2" value="28"></constructor-arg>
+        <property name="name" value="Prabhas"></property>
+        <property name="gender" value="Male"></property>
+        <property name="age" value="40"></property>
+    </bean>
+    <bean id="movie" class="com.stackroute.spring_demo.Movie" autowire="byName">
 
     </bean>
 
-
-
-
-    <bean id="movie2" autowire="byName" class="com.stackroute.spring_demo.Movie" >
-
-    </bean>
-    <bean id="movie3" autowire="byName" class="com.stackroute.spring_demo.Movie" >
-
-    </bean>
 
 
 </beans>
