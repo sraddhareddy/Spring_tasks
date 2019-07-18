@@ -20,8 +20,8 @@ public class Actor {
         return name;
     }
 
-    public void displayActorInfo1()
+    public String toString()
     {
-        System.out.println("Name is : "+name +", Gender is : " +gender+ ", Age is : " +age);
+        return "Name is : "+name +", Gender is : " +gender+ ", Age is : " +age;
     }
 }
